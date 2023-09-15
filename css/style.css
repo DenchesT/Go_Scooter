@@ -1,0 +1,406 @@
+@font-face {
+  font-display: swap;
+  font-family: "YS Text";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://yastatic.net/s3/home/fonts/ys/4/text-regular.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "YS Text";
+  font-style: normal;
+  font-weight: 500;
+  src: url("https://yastatic.net/s3/home/fonts/ys/4/text-medium.woff") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "YS Text";
+  font-style: normal;
+  font-weight: 900;
+  src: url("https://yastatic.net/s3/home/fonts/ys/4/text-black.woff") format("woff2");
+}
+.pixel-perfect-image {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.5;
+}
+
+body {
+  min-width: 375px;
+  min-height: 100vh;
+  font-family:
+    YS Text,
+    sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 24px;
+  color: #21201f;
+  background: white;
+  box-sizing: border-box;
+  /* background-image: url(/yandex/img/1440.png); */
+}
+
+button {
+  padding: 0;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h4 {
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 100%;
+  letter-spacing: -0.96px;
+}
+
+/* header */
+
+.header {
+  display: flex;
+  flex-flow: row wrap;
+  height: 804px;
+  margin: 0;
+  padding: 0;
+}
+
+.header::before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.22;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%),
+    linear-gradient(90deg, #ff5c4d 0%, #eb469f 25%, #8341ef 72%, #3f68f9 100%);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 420px;
+  margin-top: 247px;
+  margin-left: 262px;
+  z-index: 2;
+}
+
+.scooter__img-header {
+  position: absolute;
+  margin: 13px 578px 67px;
+  width: 745px;
+  height: 742px;
+  transform: rotate(-8deg);
+  z-index: 1;
+}
+
+.rectangle__img-header {
+  position: absolute;
+  margin: 395px 772px 67px;
+  width: 207px;
+  height: 207px;
+  z-index: 1;
+}
+
+.oval__header {
+  position: absolute;
+  width: 658px;
+  height: 402px;
+  margin: 144px 224px 259px 558px;
+  transform: rotate(-140deg);
+  border-radius: 658px;
+  opacity: 0.5;
+  background: #8241ef;
+  filter: blur(100px);
+  z-index: 0;
+}
+
+.header__logo {
+  position: absolute;
+  margin: 44px 542px 74px;
+  margin: 125px 1002px 629px 262px;
+}
+
+.header__title {
+  width: 420px;
+  height: 196px;
+  margin-top: -9px;
+  padding-bottom: 48px;
+  font-size: 72px;
+  font-weight: 900;
+  line-height: 100%;
+  letter-spacing: -1.44px;
+}
+
+.header__text {
+  margin-top: 2px;
+  padding-bottom: 36px;
+  letter-spacing: 0.04px;
+  line-height: 130%;
+}
+
+.header__discount-min {
+  position: relative;
+  top: -1px;
+  margin-left: -2px;
+  line-height: 120%;
+  letter-spacing: -0.05px;
+  border-radius: 500px;
+  padding: 2.5px 12px;
+  background: radial-gradient(141.42% 141.42% at 100% 0%, #e0b8ff 0%, #b6b9ff 100%);
+  z-index: 0;
+}
+
+.header__discount-max {
+  position: inherit;
+  margin: 21px -45px;
+  padding: 11px 12px 3px 57px;
+  color: #808080;
+  font-size: 16px;
+  line-height: 120%;
+  border-radius: 500px;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.63) 0%, rgba(255, 255, 255, 0.63) 100%), radial-gradient(141.42% 141.42% at 100% 0%, #e0b8ff 0%, #b6b9ff 100%);
+  text-decoration: line-through;
+  text-decoration-color: #808080;
+}
+
+.btn {
+  display: inline-flex;
+  width: 318px;
+  height: 65px;
+  padding: 24px 48px;
+  align-items: center;
+  gap: 4px;
+  border-radius: 36px;
+  background: #ffde40;
+  box-shadow: 0px 4px 98px 0px rgba(255, 222, 64, 0.59);
+  font-weight: 500;
+  line-height: 22px;
+}
+
+/* Benifits */
+
+.benifits {
+  width: 827px;
+  height: 667px;
+  margin-left: 262px;
+  margin-bottom: 97px;
+}
+
+.benifits__advantages {
+  font-size: 56px;
+  font-weight: 900;
+  line-height: 100%;
+  letter-spacing: -1.12px;
+  margin-top: -4px;
+}
+
+.benifits__items {
+  display: grid;
+  grid-template-columns: 362px 400px;
+  gap: 62px 112px;
+  margin-top: 40px;
+}
+
+.item-text {
+  letter-spacing: 0.08px;
+  margin-top: 9px;
+  line-height: 120%;
+}
+
+/* events */
+
+.events {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-left: 262px;
+  margin-bottom: 68px;
+}
+
+.events__title {
+  width: 827px;
+  margin-bottom: 35px;
+}
+
+.events__text {
+  width: 441px;
+  line-height: 29px;
+  margin-bottom: 71px;
+}
+
+.events__photo img {
+  position: relative;
+  width: 456px;
+  height: 456px;
+  padding: 0 23px 24px 0;
+  transform: rotate(2deg);
+  border-radius: 64px 64px 64px 64px;
+  margin-left: -8px;
+}
+
+.events__photo-party {
+  top: -211px;
+  left: 12px;
+}
+
+.events__photo-party::after {
+  content: "";
+  position: absolute;
+  width: 360px;
+  height: 360px;
+  background-size: 360px 360px;
+  background-repeat: no-repeat;
+  background-image: url(/yandex/img/baloon.svg);
+}
+
+.events__photo-shopper {
+  top: -6px;
+  left: -14px;
+}
+
+.events__photo-woman {
+  top: -220px;
+  left: -3px;
+}
+
+.decor {
+  position: absolute;
+}
+
+.tag {
+  position: absolute;
+  margin: 265px -265px;
+}
+
+/* Plus */
+
+.plus {
+  margin-left: 260px;
+  margin-bottom: 129px;
+}
+
+.plus__words {
+  width: 419px;
+  height: 436px;
+}
+
+.plus__title {
+  padding-bottom: 36px;
+}
+
+.plus__text {
+  line-height: 120%;
+}
+
+.scooter__plus {
+  position: absolute;
+  margin: -235px 309px;
+}
+
+.plus__logo {
+  position: absolute;
+  margin: 55px 470px;
+}
+
+.oval__plus {
+  position: absolute;
+  margin: 13px 633px;
+  width: 413px;
+  height: 369px;
+  transform: rotate(-140deg);
+  border-radius: 413px;
+  opacity: 0.29;
+  background: #8241ef;
+  filter: blur(100px);
+  z-index: -1;
+}
+
+/* Club */
+
+.club {
+  margin-left: 736px;
+  margin-right: auto;
+  margin-bottom: 118px;
+}
+
+.club__words {
+  width: 419px;
+  height: 491px;
+}
+
+.club__title {
+  line-height: 100%;
+  letter-spacing: -0.96px;
+  padding-bottom: 35px;
+}
+
+.club__text {
+  line-height: 120%;
+  letter-spacing: 0.05px;
+  padding-bottom: 42px;
+}
+
+.btn__club {
+  width: 282px;
+}
+
+.scooter__club {
+  position: absolute;
+  margin: 6px -470px 67px;
+  width: 283px;
+  height: 392px;
+}
+
+.rectangle__club {
+  position: absolute;
+  margin: -59px -596px;
+  height: 539px;
+}
+
+.oval__club {
+  position: absolute;
+  margin: 62px -550px;
+  width: 407px;
+  height: 369px;
+  transform: rotate(-140deg);
+  border-radius: 413px;
+  opacity: 0.29;
+  background: #8241ef;
+  filter: blur(100px);
+  z-index: -1;
+}
+
+/* Footer */
+
+.conditions {
+  margin: 0 274px 128px 260px;
+}
+
+.conditions__text {
+  width: 906px;
+  height: 96px;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: 0.03px;
+  color: #c5c5c5;
+}
